@@ -1,0 +1,6 @@
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\bin\Debug\AnyDoDotNet.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\bin\Debug\AnyDoDotNet.pdb
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\bin\Debug\Newtonsoft.Json.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\obj\Debug\AnyDoDotNet.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\obj\Debug\AnyDoDotNet.pdb
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\obj\Debug\AnyDoDotNet.csprojResolveAssemblyReference.cache

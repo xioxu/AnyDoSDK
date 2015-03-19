@@ -1,0 +1,5 @@
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\bin\Debug\AnyDoDotNetClient.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\bin\Debug\AnyDoDotNetClient.pdb
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\bin\Debug\Newtonsoft.Json.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\obj\Debug\AnyDoDotNetClient.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNetClient\obj\Debug\AnyDoDotNetClient.pdb

@@ -1,0 +1,9 @@
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\bin\Debug\AnyDoDotNet_Test.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\bin\Debug\AnyDoDotNet_Test.pdb
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\bin\Debug\AnyDoDotNet.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\bin\Debug\nunit.framework.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\bin\Debug\Newtonsoft.Json.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\bin\Debug\AnyDoDotNet.pdb
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\obj\Debug\AnyDoDotNet_Test.csprojResolveAssemblyReference.cache
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\obj\Debug\AnyDoDotNet_Test.dll
+C:\Work\Source\Outlook_GTD_Plugin\AnyDoDotNet_Test\obj\Debug\AnyDoDotNet_Test.pdb
