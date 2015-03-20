@@ -26,25 +26,25 @@ namespace AnyDoDotNet
             set;
         }
 
-        public int RepeatEndsAfterOccurrences
+        public int? RepeatEndsAfterOccurrences
         {
             get;
             set;
         }
 
-        public TASK_REPEAT_END_Type RepeatEndType
+        public TASK_REPEAT_END_Type? RepeatEndType
         {
             get;
             set;
         }
 
-        public int RepeatInterval
+        public int? RepeatInterval
         {
             get;
             set;
         }
 
-        public Repeat_Monty_Type RepeatMonthType
+        public Repeat_Monty_Type? RepeatMonthType
         {
             get;
             set;

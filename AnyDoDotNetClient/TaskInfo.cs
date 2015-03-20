@@ -8,8 +8,6 @@ namespace AnyDoDotNet
 {
     public class TaskInfo : TaskBaseInfo
     {
-
-
         public string AssignedTo
         {
             get;

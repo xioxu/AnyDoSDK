@@ -17,12 +17,14 @@ namespace AnyDoDotNet
                     throw new ArgumentOutOfRangeException(
                         "Unix epoc starts January 1st, 1970");
                 }
+
                 ticks = (long)delta.TotalMilliseconds;
             }
             else
             {
                 throw new Exception("Expected date object value.");
             }
+
             writer.WriteValue(ticks);
         }
 
@@ -39,7 +41,7 @@ namespace AnyDoDotNet
             }
 
             var t = long.Parse(reader.Value.ToString());
-            return new DateTime(1970, 1, 1,0,0,0,DateTimeKind.Utc).AddMilliseconds(t);
+            return new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddMilliseconds(t);
         }
 
         public override bool CanConvert(Type objectType)

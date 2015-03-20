@@ -15,7 +15,7 @@ namespace AnyDoDotNet_Test
         public void LoginTest()
         {
             _client = new AnyDoDotNetClient();
-            var userInfo = _client.Login("52280764@qq.com", "a111111");
+            var userInfo = _client.Login("yourEmailAccount", "password");
 
             Assert.IsNotNull(userInfo);
             Console.WriteLine(userInfo.Name);
@@ -25,13 +25,13 @@ namespace AnyDoDotNet_Test
         public void SubmitAndUpdateTaskTest()
         {
             var taskTitle = "API_UT";
-            var task = _client.SubmitTask(new TaskCreationInfo(){DueDate = DateTime.Now.AddDays(1), Title = taskTitle });
+            var task = _client.SubmitTask(new TaskCreationInfo() { DueDate = DateTime.Now.AddDays(1), Title = taskTitle });
             Assert.IsNotNull(task);
             Assert.AreEqual(taskTitle, task.Title);
 
             task.Status = TaskStatus.DELETED;
             task = _client.UpdateTask(task);
-            Assert.AreEqual(TaskStatus.DELETED,task.Status);
+            Assert.AreEqual(TaskStatus.DELETED, task.Status);
         }
 
         [Test]
@@ -45,9 +45,25 @@ namespace AnyDoDotNet_Test
         [Test]
         public void GetTasksTest()
         {
-            var tasks = _client.GetTasks(true, true);
-            Assert.IsNotNull(tasks);
-            Assert.IsTrue(tasks.Length > 0);
+            var tasks = _client.GetTasks(false, true);
+            var taskLength = tasks.Length;
+            var newTask = addTask();
+
+            tasks = _client.GetTasks(false, true);
+
+            Assert.IsTrue(tasks.Length == (taskLength + 1));
+
+            newTask.Status = TaskStatus.DELETED;
+            _client.UpdateTask(newTask);
+
+            tasks = _client.GetTasks(false, true);
+            Assert.IsTrue(tasks.Length == taskLength);
+        }
+
+        private TaskInfo addTask()
+        {
+            var taskTitle = "API_UT";
+            return _client.SubmitTask(new TaskCreationInfo() { DueDate = DateTime.Now.AddDays(1), Title = taskTitle });
         }
     }
 }

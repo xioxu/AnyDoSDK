@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="AlertInfo.cs" />
     <Compile Include="AnyDoDotNetClient.cs" />
-    <Compile Include="BoolConverter.cs" />
     <Compile Include="CategoryInfo.cs" />
     <Compile Include="PrivateSetterContractResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
