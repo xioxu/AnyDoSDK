@@ -21,6 +21,12 @@ namespace AnyDoDotNet
             set;
         }
 
+        public string Note
+        {
+            get;
+            set;
+        }
+
         [JsonProperty(PropertyName = "title")]
         public string Title
         {

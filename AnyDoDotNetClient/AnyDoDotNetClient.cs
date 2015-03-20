@@ -39,8 +39,13 @@ namespace AnyDoDotNet
             return UserInfo;
         }
 
-        public CategoryInfo[] GetCategories(bool includeDeleted, bool includeDone)
+        public CategoryInfo[] GetCategories(bool includeDeleted = false, bool includeDone = false, bool refresh = false)
         {
+            if (!refresh && _catefories != null)
+            {
+                return _catefories;
+            }
+
             //me/categories?responseType=flat&includeDeleted=false&includeDone=false 
             var result = DoRequest("/me/categories", "get", new {includeDeleted, includeDone},
                 RequestBodyContentType.None);
@@ -105,9 +110,9 @@ namespace AnyDoDotNet
         {
             foreach (var category in _catefories)
             {
-                if (category.isDefault)
+                if (category.IsDefault)
                 {
-                    return category.id;
+                    return category.Id;
                 }
             }
 

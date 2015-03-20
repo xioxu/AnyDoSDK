@@ -32,12 +32,6 @@ namespace AnyDoDotNet
             set;
         }
 
-        public string Note
-        {
-            get;
-            set;
-        }
-
         public string ParentGlobalTaskId
         {
             get;

@@ -8,12 +8,12 @@ namespace AnyDoDotNet
     /// </summary>
     public class CategoryInfo
     {
-        public bool isDefault
+        public bool IsDefault
         {
             get; set;
         }
 
-        public string id
+        public string Id
         {
             get; set;
         }
@@ -25,25 +25,25 @@ namespace AnyDoDotNet
             set;
         }
 
-        public string sharedMembers
+        public string SharedMembers
         {
             get;
             set;
         }
 
-        public DateTime lastUpdateDate
+        public DateTime LastUpdateDate
         {
             get;
             set;
         }
 
-        public string name
+        public string Name
         {
             get;
             set;
         }
 
-        public bool isDeleted
+        public bool IsDeleted
         {
             get;
             set;
