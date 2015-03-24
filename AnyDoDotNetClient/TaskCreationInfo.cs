@@ -5,6 +5,9 @@ using System.Text;
 
 namespace AnyDoDotNet
 {
+    /// <summary>
+    /// The only required field for create a task is: "Title"
+    /// </summary>
    public class TaskCreationInfo : TaskBaseInfo
     {
        public TaskCreationInfo ()

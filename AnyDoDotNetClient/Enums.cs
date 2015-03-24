@@ -18,7 +18,8 @@ namespace AnyDoDotNet
         TASK_REPEAT_OFF,
         TASK_REPEAT_DAY,
         TASK_REPEAT_WEEK,
-        TASK_REPEAT_MONTH
+        TASK_REPEAT_MONTH,
+        TASK_REPEAT_YEAR
     }
 
     [JsonConverter(typeof(StringEnumConverter))]

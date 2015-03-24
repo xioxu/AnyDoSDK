@@ -20,7 +20,7 @@ namespace AnyDoDotNet
             set;
         }
 
-        public DateTime LastUpdateDate
+        public DateTime? LastUpdateDate
         {
             get;
             set;

@@ -15,6 +15,11 @@ namespace AnyDoDotNet
         private const string baseUrl = "https://sm-prod2.any.do/";
         private readonly CookieContainer _cookie = new CookieContainer();
         private CategoryInfo[] _catefories;
+        
+        public delegate void RequestDone();
+        public delegate void ResponseDone();
+        public event RequestDone RequestDoneEvent;
+        public event ResponseDone ResponseDoneEvent;
 
         public AnyDoDotNetClient()
         {
@@ -204,12 +209,22 @@ namespace AnyDoDotNet
                         var stream = req.GetRequestStream();
                         stream.Write(bytes, 0, bytes.Length);
                         stream.Close();
+
+                        if (RequestDoneEvent != null)
+                        {
+                            RequestDoneEvent();
+                        }
                     }
                 }
 
                 var response = (HttpWebResponse) req.GetResponse();
                 var sr = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
                 var result = sr.ReadToEnd();
+
+                if (ResponseDoneEvent != null)
+                {
+                    ResponseDoneEvent();
+                }
                 return result;
             }
             catch (Exception ex)
